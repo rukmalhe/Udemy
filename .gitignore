@@ -1,0 +1,43 @@
+# Maven
+target/
+
+# IntelliJ
+.idea/
+*.iml
+
+# Eclipse
+.project
+.classpath
+.settings/
+
+# VS Code
+.vscode/
+
+# Mac
+.DS_Store
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.swp
+
+# Java
+*.class
+
+# Test reports
+surefire-reports/
+failsafe-reports/
+
+# Coverage reports
+coverage/
+jacoco.exec
+site/
+
+# Environment files
+.env
+.env.*
+
+# OS files
+Thumbs.db

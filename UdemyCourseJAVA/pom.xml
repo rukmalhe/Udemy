@@ -1,0 +1,48 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <!-- Define basic project details -->
+    <groupId>com.example</groupId>   <!-- Replace with your package name -->
+    <artifactId>helloworld</artifactId>  <!-- Replace with your project name -->
+    <version>1.0-SNAPSHOT</version>
+    <packaging>jar</packaging> <!-- or 'war' for web applications -->
+
+    <name>HelloWorld Project</name> <!-- Optional project name -->
+    <description>A simple Java project with Maven build</description> <!-- Optional description -->
+
+    <!-- Specify Java version -->
+    <properties>
+        <maven.compiler.source>17</maven.compiler.source> <!-- Replace with your Java version -->
+        <maven.compiler.target>17</maven.compiler.target>
+    </properties>
+
+    <!-- Define dependencies -->
+    <dependencies>
+        <!-- Example dependency for JUnit 5 (for testing) -->
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-api</artifactId>
+            <version>5.8.1</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+    <!-- Specify Maven build plugins (optional) -->
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.8.1</version>
+                <configuration>
+                    <source>${maven.compiler.source}</source>
+                    <target>${maven.compiler.target}</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>

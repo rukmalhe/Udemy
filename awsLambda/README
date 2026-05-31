@@ -1,0 +1,14 @@
+Maven Dependancies
+==================
+
+Java 11 Correto
+
+Maven dependancies
+    AWS Lambda core - aws-lambda-java-core
+    AWD Lambda events - aws-lambda-java-events
+
+ Package the project,
+    Maven Shared Plugin
+
+        - mvn clean package
+
